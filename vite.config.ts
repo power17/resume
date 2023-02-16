@@ -9,6 +9,13 @@ export default defineConfig({
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
-	plugins: [vue()]
-
+	plugins: [vue()],
+	server: {
+      port: 3000, //启动端口
+      host: '0.0.0.0',
+      open: true, //自动打开
+      
+      // 设置代理
+      // proxy: createProxy()
+    }
 })
