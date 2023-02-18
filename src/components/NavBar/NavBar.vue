@@ -1,8 +1,13 @@
 <template>
-	<div>111</div>
+	<div class="nav-bar-box">
+	    <logo-com
+	      icon-color='#fff'>
+		</logo-com>
+		<el-button type="primary">fjsdfj</el-button>
+	</div>
 </template>
 
-<script>
+<script setup>
 </script>
 
 <style>
