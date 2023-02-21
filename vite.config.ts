@@ -15,13 +15,13 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		AutoImport({
-		    resolvers: [ElementPlusResolver()],
+		  resolvers: [ElementPlusResolver()],
 			imports:["vue", "vue-router"],
 			dts:'src/auto-import.d.ts',
 			 
 		}),
 		Components({
-		    resolvers: [ElementPlusResolver()],
+		  resolvers: [ElementPlusResolver()],
 			dts: 'src/components.d.ts',
 		}),
 		],

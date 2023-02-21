@@ -7,4 +7,7 @@
 ### 拉取项目
 ```bash
 git clone git@github.com:power17/resume.git
+cd resume
+pnpm install
+pnpm dev
 ```

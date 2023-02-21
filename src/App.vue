@@ -2,10 +2,9 @@
 	<router-view></router-view>
 </template>
 
-<script>
+<script setup lang="ts">
+// import appStore from '@/store'
 
+// console.log(appStore)
 
-export default {
-  name: 'App'
-}
 </script>

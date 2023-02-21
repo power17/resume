@@ -6,11 +6,12 @@
 </template>
 
 <script setup lang="ts">
-	import NavBar from '@/components/NavBar/NavBar.vue'
-	import { onBeforeUnmount, onMounted, ref } from 'vue';
+	import { onBeforeUnmount, onMounted, ref } from 'vue'
+	import appStore from '@/store'
 	const navColor = ref<string>('');
 	const fontColor = ref<string>('#fff');
 	const iconColor = ref<string>('#fff');
+	console.log(appStore.useUserInfoStore.userInfo)
 	
 </script>
 
