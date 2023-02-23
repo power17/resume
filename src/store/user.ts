@@ -9,6 +9,7 @@ export const useUserInfoStore = defineStore('userInfoStore', () => {
     const getAndUpdateUserInfo = async() => {
         const email = '1410837981@qq.com'
         const data = await getUserInfoAsync(email)
+        console.log(data)
 
     }
     return {
