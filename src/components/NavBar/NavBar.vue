@@ -11,7 +11,7 @@
 				 :ellipsis="false"
 			    @select="handleSelect"
 			  >
-				   <template v-for="(item, index) in menuList" :key="item.path">
+				   <template v-for="(item, index) in menuList" :key="index">
 				          <template v-if="item.children">
 				            <el-sub-menu
 				              :index="item.name"
@@ -22,7 +22,7 @@
 				              <template #title>{{ item.title }}</template>
 				              <el-menu-item
 				                v-for="(childItem, childIndex) in item.children"
-				                :key="childItem.path"
+				                :key="childIndex"
 				                :index="childItem.name"
 				                >{{ childItem.title }}</el-menu-item
 				              >

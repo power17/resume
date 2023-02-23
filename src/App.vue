@@ -2,9 +2,10 @@
 	<router-view></router-view>
 </template>
 
-<script setup lang="ts">
-// import appStore from '@/store'
+<script lang="ts" setup>
+import appStore from "./store";
+const { token } = appStore.useTokenStore
+const { getAndUpdateUserInfo } = appStore.useUserInfoStore
 
-// console.log(appStore)
-
+getAndUpdateUserInfo()
 </script>

@@ -11,7 +11,7 @@
 	const navColor = ref<string>('');
 	const fontColor = ref<string>('#fff');
 	const iconColor = ref<string>('#fff');
-	console.log(appStore.useUserInfoStore.userInfo)
+
 	
 </script>
 
